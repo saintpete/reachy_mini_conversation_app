@@ -26,6 +26,10 @@ dependencies = [
     "mcp>=1.27.1",
 ]
 
+[project.optional-dependencies]
+# Local wake word for standby mode (STANDBY_ON_SLEEP=1)
+wakeword = ["openwakeword>=0.6.0"]
+
 [dependency-groups]
 dev = [
   "pytest",
